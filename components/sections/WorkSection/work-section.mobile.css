@@ -1,0 +1,46 @@
+@media (max-width: 640px) {
+  #work {
+    background: var(--iv);
+    color: var(--k);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  #work h2 {
+    text-align: left;
+    font-size: 19vw;
+    margin-bottom: -0.1em;
+    position: relative;
+    z-index: 2;
+  }
+
+  #work .a {
+    aspect-ratio: 4 / 5;
+  }
+
+  #work .b,
+  #work .c,
+  #work .d2 {
+    margin: 0;
+    width: 68%;
+    aspect-ratio: 1;
+  }
+
+  #work .c {
+    align-self: flex-end;
+    aspect-ratio: 3 / 4;
+  }
+
+  #work figcaption {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font: 700 10px / 1 var(--sans);
+    letter-spacing: 0.22em;
+    background: var(--iv);
+    color: var(--k);
+    padding: 7px 9px;
+    z-index: 2;
+  }
+}

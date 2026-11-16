@@ -1,0 +1,35 @@
+@media (min-width: 641px) {
+  nav {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: calc(18px + env(safe-area-inset-top, 0px)) var(--pad) 18px;
+    transition: background 0.3s;
+  }
+
+  nav.s {
+    background: rgba(16, 19, 23, 0.92);
+  }
+
+  .nl {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .nl a:not(.btn) {
+    opacity: 0.75;
+    transition: opacity 0.2s;
+  }
+
+  .nl a:not(.btn):hover {
+    opacity: 1;
+  }
+
+  .bg {
+    display: none;
+  }
+}

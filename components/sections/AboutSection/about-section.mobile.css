@@ -1,0 +1,44 @@
+@media (max-width: 640px) {
+  #about {
+    background: var(--w);
+    color: var(--k);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  #about .p1 {
+    width: 84%;
+    aspect-ratio: 3 / 4;
+  }
+
+  #about .p2 {
+    margin: -40% 0 0 auto;
+    width: 55%;
+    border: 6px solid var(--w);
+    aspect-ratio: 4 / 5;
+    position: relative;
+    z-index: 2;
+  }
+
+  #about .tx {
+    padding: 0;
+  }
+
+  #about h2 {
+    font-size: clamp(40px, 5.6vw, 92px);
+    margin: 22px 0 36px;
+  }
+
+  #about p {
+    font: 500 clamp(19px, 1.7vw, 24px) / 1.45 var(--serif);
+    margin-bottom: 1em;
+    max-width: 26em;
+  }
+
+  #about .loc {
+    display: block;
+    margin-top: 40px;
+    color: var(--b);
+  }
+}

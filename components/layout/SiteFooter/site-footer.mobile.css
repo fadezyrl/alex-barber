@@ -1,0 +1,38 @@
+@media (max-width: 640px) {
+  footer {
+    background: var(--k);
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
+
+  footer .w {
+    font: 600 clamp(48px, 15.5vw, 270px) / 0.85 var(--serif);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    margin: 0 calc(var(--pad) * -1) 0 -0.04em;
+    color: var(--g);
+  }
+
+  footer .r1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  footer .r1 div {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+
+  footer .cp {
+    margin-top: 20px;
+    opacity: 0.45;
+  }
+}

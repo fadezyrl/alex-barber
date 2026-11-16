@@ -1,0 +1,74 @@
+@media (min-width: 641px) {
+  #svc {
+    background: var(--g);
+  }
+
+  #svc h2 {
+    font-size: clamp(48px, 9vw, 150px);
+    max-width: 9em;
+    margin-bottom: clamp(40px, 7vw, 100px);
+  }
+
+  #svc ol {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  #svc li {
+    display: grid;
+    grid-template-columns: clamp(70px, 12vw, 190px) 1fr 1.1fr;
+    gap: 20px;
+    align-items: baseline;
+    padding: clamp(22px, 3vw, 40px) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    transition: padding 0.45s;
+  }
+
+  #svc li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 0;
+    background: var(--b);
+    transition: width 0.6s;
+  }
+
+  #svc li:hover {
+    padding-left: 18px;
+  }
+
+  #svc li:hover::before {
+    width: 100%;
+  }
+
+  #svc .n {
+    font: 500 clamp(44px, 7vw, 110px) / 0.8 var(--serif);
+    color: var(--m);
+    opacity: 0.4;
+    transition: 0.4s;
+  }
+
+  #svc li:hover .n {
+    color: var(--b);
+    opacity: 1;
+  }
+
+  #svc h3 {
+    font: 500 clamp(28px, 3.6vw, 56px) / 1 var(--serif);
+  }
+
+  #svc p {
+    color: var(--m);
+    max-width: 30em;
+    font-size: 15px;
+  }
+
+  #svc .nt {
+    margin-top: 28px;
+    opacity: 0.55;
+  }
+}

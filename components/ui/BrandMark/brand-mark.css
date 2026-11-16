@@ -1,0 +1,9 @@
+.wm {
+  font: 600 20px / 1 var(--serif);
+  letter-spacing: 0.32em;
+}
+
+.wm i {
+  font-style: normal;
+  color: var(--b);
+}

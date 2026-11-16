@@ -1,0 +1,100 @@
+import type { Dictionary } from "./es";
+
+export const en: Dictionary = {
+  meta: {
+    title: "Alex Barber · Professional barber in Kendall, Miami",
+    description:
+      "Modern cuts. Sharp details. Professional barber in Kendall, Miami.",
+  },
+  nav: {
+    about: "About",
+    services: "Services",
+    gallery: "Gallery",
+    contact: "Contact",
+    book: "Book appointment",
+    brandAria: "Alex Barber",
+    menuAria: "Menu",
+    localeAria: "Language / Idioma",
+  },
+  hero: {
+    line1: "Precision",
+    line2: "in every",
+    line3: "detail.",
+    sub: "Modern cuts. Sharp details. Miami.",
+    cta: "Book appointment",
+    photoLabel: "Main photo of Alex",
+  },
+  work: {
+    title: "The work speaks.",
+    l1: "SKIN FADE",
+    taper: "TAPER",
+    l2: "HAIR DESIGN",
+    l3: "BEARD",
+    slots: {
+      w1: "Main cut",
+      w2: "Side detail",
+      w3: "Back view",
+      w4: "Beard / outline",
+    },
+  },
+  services: {
+    title: "The art of the cut.",
+    pricingNote: "Pricing: confirmed when you book",
+    items: {
+      s1: "Modern haircut",
+      s2: "Skin fade",
+      s3: "Taper fade",
+      s4: "Beard grooming",
+      s5: "Haircut & beard",
+      s6: "Creative hair design",
+    },
+    descriptions: {
+      d1: "A cut shaped around your face and style, with a clean, defined finish.",
+      d2: "A smooth, precise fade down to the skin, at the length you choose.",
+      d3: "A subtle, refined transition at the sides and neckline, made for every day.",
+      d4: "Shaping, lining and care for a sharp, tidy beard.",
+      d5: "The full service: hair and beard in a single appointment.",
+      d6: "Hand-shaved lines, patterns and detail work.",
+    },
+  },
+  about: {
+    eyebrow: "The barber",
+    title: "Behind every cut, there's a craftsman.",
+    p1: "Alex is a professional barber in Kendall, Miami. He works by appointment so every client gets the time the cut deserves.",
+    p2: "His approach is modern barbering: clean fades, precise lines and creative designs that respect each person's shape.",
+    portraitLabel: "Portrait of Alex",
+    workingLabel: "Alex at work",
+  },
+  details: {
+    eyebrow: "The details",
+    title: "Beyond the standard cut.",
+    body: "Shaved patterns, sharp linework and detailed fades.",
+    photoLabel: "Design / line close-up",
+  },
+  booking: {
+    title: "Your next cut starts here.",
+    body: "Appointment only. Book online and choose your time with Alex.",
+    cta: "Book your appointment",
+    visitsLabel: "Visits",
+    visitsValue: "By appointment only",
+    howLabel: "How",
+    howValue: "Book online and arrive on time",
+    photoLabel: "Cut detail",
+  },
+  contact: {
+    titleBefore: "Kendall, Miami. ",
+    titleItalic: "By appointment.",
+    area: "Area",
+    instagram: "Instagram",
+    booking: "Booking",
+    addressHours: "Address & hours",
+    toBeConfirmed: "To be confirmed",
+  },
+  footer: {
+    copyright: "© 2026 Alex Barber",
+  },
+  locale: {
+    es: "ES",
+    en: "EN",
+  },
+};

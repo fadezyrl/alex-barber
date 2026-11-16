@@ -1,0 +1,63 @@
+@media (max-width: 640px) {
+  #det {
+    background: var(--k);
+    min-height: 100svh;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+  }
+
+  #det .ph {
+    position: absolute;
+    inset: 0;
+    opacity: 0.9;
+  }
+
+  #det .ph.empty {
+    background-image: linear-gradient(120deg, #1f252b, #0c0f12);
+  }
+
+  #det::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: var(--pad);
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: var(--b);
+    transition: height 1.6s 0.3s;
+  }
+
+  #det.in::before {
+    height: 34%;
+  }
+
+  #det .t {
+    position: relative;
+    z-index: 2;
+    align-self: end;
+    padding: 0 var(--pad) clamp(48px, 8vw, 110px);
+  }
+
+  #det h2 {
+    font-size: clamp(54px, 12vw, 200px);
+    max-width: 6.5em;
+    text-shadow: 0 2px 40px rgba(16, 19, 23, 0.6);
+  }
+
+  #det p {
+    max-width: 24em;
+    margin-top: 28px;
+    color: var(--m);
+    font-size: 15px;
+  }
+
+  #det .mu.top {
+    position: absolute;
+    z-index: 2;
+    top: 130px;
+    left: calc(var(--pad) + 24px);
+    color: var(--b);
+  }
+}
