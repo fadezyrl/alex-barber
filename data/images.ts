@@ -10,6 +10,4 @@ export const IMAGES = {
     a1: "/assets/photo-01.jpg",
     a2: "/assets/photo-11.jpg",
   },
-  details: "/assets/photo-13.jpg",
-  book: "/assets/photo-14.jpg",
 } as const;

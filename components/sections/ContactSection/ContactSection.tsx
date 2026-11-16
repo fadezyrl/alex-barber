@@ -23,6 +23,16 @@ export const ContactSection = (): ReactElement => {
           {SITE.location}
         </li>
         <li>
+          <span className="mu">{dictionary.contact.address}</span>
+          <a
+            href={SITE.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {SITE.addressDisplay}
+          </a>
+        </li>
+        <li>
           <span className="mu">{dictionary.contact.instagram}</span>
           <a
             href={SITE.instagramUrl}
@@ -39,8 +49,8 @@ export const ContactSection = (): ReactElement => {
           </a>
         </li>
         <li>
-          <span className="mu">{dictionary.contact.addressHours}</span>
-          <span className="tbc">{dictionary.contact.toBeConfirmed}</span>
+          <span className="mu">{dictionary.contact.hours}</span>
+          {dictionary.contact.hoursNote}
         </li>
       </ul>
     </section>

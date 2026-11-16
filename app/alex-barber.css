@@ -51,6 +51,12 @@ a {
   text-transform: uppercase;
 }
 
+.hb .mu {
+  display: block;
+  margin-top: 26px;
+  opacity: 0.6;
+}
+
 .d {
   font-family: var(--serif);
   font-weight: 500;

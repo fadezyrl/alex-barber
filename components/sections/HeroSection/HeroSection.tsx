@@ -15,7 +15,7 @@ export const HeroSection = (): ReactElement => {
   const ariaLabel = `${dictionary.hero.line1} ${dictionary.hero.line2} ${dictionary.hero.line3}`;
 
   return (
-    <section id="hero">
+    <section id="hero" className="hero">
       <h1 className="d" aria-label={ariaLabel}>
         <span>
           <em>{dictionary.hero.line1}</em>

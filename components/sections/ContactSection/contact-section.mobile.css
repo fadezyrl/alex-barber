@@ -35,8 +35,4 @@
   #contact li a {
     border-bottom: 1px solid var(--b);
   }
-
-  .tbc {
-    opacity: 0.5;
-  }
 }

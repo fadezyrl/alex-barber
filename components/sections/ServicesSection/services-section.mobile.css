@@ -25,7 +25,8 @@
     position: relative;
   }
 
-  #svc li p {
+  #svc .svc-copy,
+  #svc li > p {
     grid-column: 2;
   }
 
@@ -39,7 +40,13 @@
     font: 500 clamp(28px, 3.6vw, 56px) / 1 var(--serif);
   }
 
-  #svc p {
+  #svc .meta {
+    margin-top: 8px;
+    color: var(--b);
+    opacity: 0.9;
+  }
+
+  #svc li > p {
     color: var(--m);
     max-width: 30em;
     font-size: 15px;
