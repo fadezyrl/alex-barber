@@ -13,6 +13,7 @@ import "./photo-slot.css";
 type PhotoSlotProps = {
   label: string;
   src?: string;
+  videoSrc?: string;
   className?: string;
   reveal?: boolean;
   priority?: boolean;
@@ -23,6 +24,7 @@ type PhotoSlotProps = {
 export const PhotoSlot = ({
   label,
   src = "",
+  videoSrc = "",
   className = "",
   reveal = true,
   priority = false,
@@ -30,8 +32,17 @@ export const PhotoSlot = ({
   children,
 }: PhotoSlotProps): ReactElement => {
   const ref = useRef<HTMLElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isIn, setIsIn] = useState(!reveal);
-  const isEmpty = !src;
+  const [allowAutoplay, setAllowAutoplay] = useState(true);
+  const isEmpty = !src && !videoSrc;
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setAllowAutoplay(false);
+      setIsIn(true);
+    }
+  }, []);
 
   useEffect(() => {
     if (!reveal || isIn) {
@@ -64,6 +75,22 @@ export const PhotoSlot = ({
     return () => observer.disconnect();
   }, [reveal, isIn]);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !videoSrc) {
+      return;
+    }
+
+    if (!allowAutoplay) {
+      video.pause();
+      return;
+    }
+
+    if (isIn) {
+      void video.play().catch(() => undefined);
+    }
+  }, [allowAutoplay, isIn, videoSrc]);
+
   return (
     <Tag
       ref={ref as never}
@@ -72,14 +99,29 @@ export const PhotoSlot = ({
     >
       {!isEmpty ? (
         <div className={`ph-media${isIn ? " in" : ""}`}>
-          <Image
-            src={src}
-            alt={label}
-            fill
-            sizes="(max-width: 820px) 100vw, 50vw"
-            className="ph-img"
-            priority={priority}
-          />
+          {videoSrc ? (
+            <video
+              ref={videoRef}
+              className="ph-img ph-video"
+              src={videoSrc}
+              poster={src || undefined}
+              muted
+              loop
+              playsInline
+              autoPlay={allowAutoplay}
+              preload="metadata"
+              aria-label={label}
+            />
+          ) : (
+            <Image
+              src={src}
+              alt={label}
+              fill
+              sizes="(max-width: 820px) 100vw, 50vw"
+              className="ph-img"
+              priority={priority}
+            />
+          )}
         </div>
       ) : null}
       {children}

@@ -1,5 +1,6 @@
 export const IMAGES = {
   hero: "/assets/photo-02.jpg",
+  heroVideo: "/assets/hero.mp4",
   work: {
     w1: "/assets/photo-04.jpg",
     w2: "/assets/photo-03.jpg",

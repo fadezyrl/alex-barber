@@ -22,7 +22,7 @@ export const en: Dictionary = {
     line3: "detail.",
     sub: "Modern cuts, beard work and custom designs. Kendall, Miami · from $35.",
     cta: "Book now",
-    photoLabel: "Main photo of Alex",
+    photoLabel: "Alex Barber at work",
   },
   work: {
     title: "The work speaks.",

@@ -30,6 +30,7 @@ export const HeroSection = (): ReactElement => {
       <PhotoSlot
         label={dictionary.hero.photoLabel}
         src={IMAGES.hero}
+        videoSrc={IMAGES.heroVideo}
         priority
       />
       <div className="hb">

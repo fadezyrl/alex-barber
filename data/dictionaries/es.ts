@@ -135,7 +135,7 @@ export const es: Dictionary = {
     line3: "detalle.",
     sub: "Cortes modernos, barba y diseños. Kendall, Miami · desde $35.",
     cta: "Reservar ahora",
-    photoLabel: "Foto principal de Alex",
+    photoLabel: "Alex Barber trabajando",
   },
   work: {
     title: "El trabajo habla.",
