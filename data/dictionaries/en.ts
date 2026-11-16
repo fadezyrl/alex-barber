@@ -91,13 +91,7 @@ export const en: Dictionary = {
     },
   },
   booking: {
-    title: "Your next cut starts here.",
-    body: "Appointments online only through Booksy. Pick your service, choose your time, and show up ready.",
     cta: "Book on Booksy",
-    visitsLabel: "Visits",
-    visitsValue: "By Booksy appointment only",
-    howLabel: "How",
-    howValue: "Book online and arrive on time",
   },
   contact: {
     titleBefore: "Kendall, Miami. ",

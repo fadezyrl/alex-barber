@@ -2,7 +2,6 @@ import type { ReactElement } from "react";
 import { SiteFooter } from "@/components/layout/SiteFooter/SiteFooter";
 import { SiteNav } from "@/components/layout/SiteNav/SiteNav";
 import { AboutSection } from "@/components/sections/AboutSection/AboutSection";
-import { BookingSection } from "@/components/sections/BookingSection/BookingSection";
 import { ContactSection } from "@/components/sections/ContactSection/ContactSection";
 import { HeroSection } from "@/components/sections/HeroSection/HeroSection";
 import { ReviewsSection } from "@/components/sections/ReviewsSection/ReviewsSection";
@@ -19,7 +18,6 @@ const Home = (): ReactElement => {
         <ServicesSection />
         <AboutSection />
         <ReviewsSection />
-        <BookingSection />
         <ContactSection />
       </main>
       <SiteFooter />

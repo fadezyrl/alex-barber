@@ -88,13 +88,7 @@ export type Dictionary = {
     };
   };
   booking: {
-    title: string;
-    body: string;
     cta: string;
-    visitsLabel: string;
-    visitsValue: string;
-    howLabel: string;
-    howValue: string;
   };
   contact: {
     titleBefore: string;
@@ -210,13 +204,7 @@ export const es: Dictionary = {
     },
   },
   booking: {
-    title: "Tu próximo corte empieza aquí.",
-    body: "Citas solo en línea por Booksy. Elige tu servicio, tu hora y llega listo.",
     cta: "Reservar en Booksy",
-    visitsLabel: "Cita",
-    visitsValue: "Solo con reserva en Booksy",
-    howLabel: "Cómo",
-    howValue: "Agenda en línea y llega a tu hora",
   },
   contact: {
     titleBefore: "Kendall, Miami. ",
