@@ -11,7 +11,7 @@ export const en: Dictionary = {
     services: "Services",
     gallery: "Gallery",
     contact: "Contact",
-    book: "Book on Booksy",
+    book: "Book now",
     brandAria: "Alex Barber",
     menuAria: "Menu",
     localeAria: "Language / Idioma",
@@ -21,7 +21,7 @@ export const en: Dictionary = {
     line2: "in every",
     line3: "detail.",
     sub: "Modern cuts, beard work and custom designs. Kendall, Miami · from $35.",
-    cta: "Book on Booksy",
+    cta: "Book now",
     photoLabel: "Main photo of Alex",
   },
   work: {
@@ -91,7 +91,7 @@ export const en: Dictionary = {
     },
   },
   booking: {
-    cta: "Book on Booksy",
+    cta: "Book now",
   },
   contact: {
     titleBefore: "Kendall, Miami. ",

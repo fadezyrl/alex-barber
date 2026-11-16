@@ -124,7 +124,7 @@ export const es: Dictionary = {
     services: "Servicios",
     gallery: "Galería",
     contact: "Contacto",
-    book: "Reservar en Booksy",
+    book: "Reservar ahora",
     brandAria: "Alex Barber",
     menuAria: "Menu",
     localeAria: "Idioma / Language",
@@ -134,7 +134,7 @@ export const es: Dictionary = {
     line2: "en cada",
     line3: "detalle.",
     sub: "Cortes modernos, barba y diseños. Kendall, Miami · desde $35.",
-    cta: "Reservar en Booksy",
+    cta: "Reservar ahora",
     photoLabel: "Foto principal de Alex",
   },
   work: {
@@ -204,7 +204,7 @@ export const es: Dictionary = {
     },
   },
   booking: {
-    cta: "Reservar en Booksy",
+    cta: "Reservar ahora",
   },
   contact: {
     titleBefore: "Kendall, Miami. ",
